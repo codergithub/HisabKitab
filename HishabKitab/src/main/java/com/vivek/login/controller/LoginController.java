@@ -12,7 +12,7 @@ public class LoginController {
 	@RequestMapping("/login")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
- 
+		System.out.println("Chage made by vivek Singh");
 		ModelAndView mv = new ModelAndView("LoginPage");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
